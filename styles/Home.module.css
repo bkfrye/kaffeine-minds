@@ -1,0 +1,24 @@
+.leadspace {
+  background-image: url('../public/images/leadspace.png');
+  background-size: cover;
+  color: var(--white);
+  height: 211px;
+}
+
+.headline {
+  color: var(--white);
+  font-family: var(--fontHeadline);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.signup {
+  font-weight: 300;
+}
+
+.tbd {
+  background-color: var(--warm-gray);
+  height: 740px;
+}
