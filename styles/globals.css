@@ -1,3 +1,44 @@
+:root {
+  --red: #FF0000;
+  --gold: #9D7B46;
+  --black: #0B161E;
+  --dark-gray: #6D7378;
+  --warm-gray: #E5E4E0;
+  --white: #FFFFFF;
+  --fontFamily: 'Source Sans Pro', sans-serif;
+  --fontHeadline: 'Oswald', 'Source Sans Pro', sans-serif;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
 }
+
+body {
+  color: var(--black);
+  font-family: var(--fontFamily);
+}
+
+h2 {
+  font-family: var(--fontHeadline);
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+
+
+
+
