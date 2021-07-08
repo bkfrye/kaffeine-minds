@@ -1,0 +1,29 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  position: absolute;
+  width: 100%;
+
+  border: 1px solid red;
+}
+
+.logo {
+  height: auto;
+  max-width: 120px;
+  width: 100%;
+}
+
+@media (min-width: 1040px) {
+
+  .container {
+    justify-content: flex-start;
+    padding: 0 2rem;
+  }
+
+  .logo {
+    max-width: 237px;
+  }
+
+}
