@@ -1,6 +1,9 @@
-import Image from 'next/image';
-import computerDesk from '@images/man-on-computer.png';
+import coffee from '@images/coffee.png';
 import coffeeDrinker from '@images/man-drinking-coffee.png';
+import computerDesk from '@images/man-on-computer.png';
+import Image from 'next/image';
+import MadeInUSA from '@images/usa-product.svg';
+import TitleSVG from '@images/coffee-for-coders.svg';
 import shirt from '@images/shirt.png';
 import styles from '../styles/Home.module.css';
 import { useAppContext } from '@context/AppContext';
@@ -29,8 +32,30 @@ export default function Home() {
       </div>
 
 
-      <div className={styles.tbd}>
-        <h1>TBD</h1>
+      <div className={styles.forCoders}>
+        <div className={styles.forCodersWrapper}>
+          <div className={styles.forCodersImage}>
+            <div className={styles.svgTitleMobile}>
+              <TitleSVG />
+            </div>
+            <Image
+              src={coffee}
+              alt="Kaffeine Minds coffee products on display"
+            />
+          </div>
+          <div className={styles.forCodersContent}>
+            <div className={styles.svgTitle}>
+              <TitleSVG />
+            </div>
+            <div className={styles.forCodersCopy}>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis facilisis urna, vehicula auctor dolor. Mauris eleifend pharetra justo, eu auctor tortor vestibulum ac.</p>
+              <p>Pellentesque quis eleifend sem. Phasellus eu suscipit elit. Fusce mauris velit, dignissim in ipsum ut, porta faucibus odio.</p>
+            </div>
+            <div className={styles.svgUSA}>
+              <MadeInUSA />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className={styles.secondary}>
