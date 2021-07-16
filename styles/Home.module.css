@@ -276,6 +276,10 @@
   padding: 3rem 1rem;
 }
 
+.whyImage {
+  text-align: center;
+}
+
 @media (min-width: 1040px) {
   .why {
     padding: 6rem 1rem 6rem 0;
@@ -291,13 +295,14 @@
   }
 
   .whyImage {
-    position: absolute;
     left: -2%;
+    position: absolute;
   }
 }
 
 .why h2 {
   margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 .whyContent {
