@@ -51,20 +51,6 @@
   }
 }
 
-/* .leadspaceSubscribe h3 {
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 30px;
-}
-
-@media (min-width: 1040px) {
-  .leadspaceSubscribe h3 {
-    font-size: 35px;
-    line-height: 45px;
-    margin-bottom: 1rem;
-  }
-} */
-
 .form {
   display: flex;
   margin: 0.5rem 0 2rem;
@@ -137,13 +123,96 @@
   }
 }
 
-.tbd {
+.forCoders {
   background-color: var(--warm-gray);
-  height: 640px;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 840px) {
+  .forCoders {
+    padding: 6rem 1rem;
+  }
+}
+
+.forCodersWrapper {
+  margin: 0 auto;
+  max-width: 1580px;
+}
+
+@media (min-width: 840px) {
+  .forCodersWrapper {
+    display: flex;
+  }
+}
+
+.forCodersImage {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  .forCodersImage {
+    padding: 6rem 0;
+  }
+}
+
+.forCodersContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  width: calc(50% - 1rem);
+}
+
+.forCodersCopy {
+  width: 100%;
+}
+
+.svgTitle {
+  display: none;
+  height: auto;
+  margin-bottom: 2.5rem;
+  max-width: 381px;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  .svgTitle {
+    display: block;
+  }
+}
+
+.svgTitleMobile {
+  margin: 0 auto;
+  max-width: 345px;
+}
+
+@media (min-width: 840px) {
+  .svgTitleMobile {
+    display: none;
+  }
+}
+
+.svgUSA {
+  height: auto;
+  margin-top: 1rem;
+  max-width: 107px;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  .svgUSA {
+    margin-top: 6rem;
+  }
 }
 
 .secondary {
+  margin: 0 auto;
+  max-width: 1580px;
   padding: 4rem 1rem 4rem 0;
 }
 
