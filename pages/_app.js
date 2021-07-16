@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 
 import { AppWrapper } from '@context/AppContext';
+import Footer from '@components/Footer.js';
 import Head from 'next/head';
 import Masthead from '@components/Masthead.js';
 
@@ -15,6 +16,7 @@ function App({ Component, pageProps }) {
       <main>
         <Component {...pageProps} />
       </main>
+      <Footer />
     </AppWrapper>
   )
 }
