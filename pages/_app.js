@@ -12,7 +12,9 @@ function App({ Component, pageProps }) {
         <meta name="description" content="Kaffeine Minds website" />
       </Head>
       <Masthead />
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
     </AppWrapper>
   )
 }
