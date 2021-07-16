@@ -23,7 +23,7 @@ body {
 h1 {
   font-family: var(--fontHeadline);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.1px;
   line-height: 45px;
   text-transform: uppercase;
