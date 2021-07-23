@@ -1,6 +1,7 @@
 import coffee from '@images/coffee.png';
 import coffeeDrinker from '@images/man-drinking-coffee.png';
 import computerDesk from '@images/man-on-computer.png';
+import Form from '@components/Form.js';
 import Image from 'next/image';
 import MadeInUSA from '@images/usa-product.svg';
 import TitleSVG from '@images/coffee-for-coders.svg';
@@ -23,10 +24,7 @@ export default function Home() {
         <h1 className={styles.headline}><span className="gold">Good</span> from <br/>the ground up</h1>
         <div className={styles.leadspaceSubscribe}>
           <h3>Upgrade your day with Kaffeine Minds.</h3>
-          <div className={styles.form}>
-            <input type="text"/>
-            <button>subscribe</button>
-          </div>
+          <Form />
         </div>
       </div>
 
@@ -112,10 +110,7 @@ export default function Home() {
 
       <div className={styles.upcoming}>
         <p>Kaffeine Minds is coming Spring 2021, stay up to date.</p>
-        <div className={styles.form}>
-          <input type="text"/>
-          <button>subscribe</button>
-        </div>
+        <Form />
       </div>
     </>
   )
