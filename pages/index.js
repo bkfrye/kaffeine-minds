@@ -7,13 +7,20 @@ import TitleSVG from '@images/coffee-for-coders.svg';
 import shirt from '@images/shirt.png';
 import styles from '../styles/Home.module.css';
 import { useAppContext } from '@context/AppContext';
-import { useContext } from 'react';
+import { useEffect } from 'react';
 
 export default function Home() {
-  const { toggleMobileMenu } = useAppContext()
+  const { viewportWidth } = useAppContext();
+  const breakpoint = 1080;
+
   return (
     <>
       <div className={styles.leadspace}>
+        { (viewportWidth >= breakpoint) && (
+          <video autoPlay muted loop className={styles.video}>         
+            <source src="/videos/bg-video.mp4" type="video/mp4"/>       
+          </video>
+        )}
         <h1 className={styles.headline}><span className="gold">Good</span> from <br/>the ground up</h1>
         <div className={styles.leadspaceSubscribe}>
           <h3>Upgrade your day with Kaffeine Minds.</h3>
