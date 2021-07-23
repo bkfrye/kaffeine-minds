@@ -246,8 +246,21 @@
   background-image: url('../public/images/bg-texture.png');
   background-color: var(--warm-gray);
   background-position: center center;
+  margin: 0 auto 2rem;
+  max-width: 1280px;
   padding: 3rem 1rem;
   position: relative;
+  width: 100%;
+}
+
+
+@media (min-width: 1040px) {
+  .swag {
+    background-color: transparent;
+    background-image: none;
+    padding: 6rem 12rem;
+    text-align: left;
+  }
 }
 
 .swag:after {
@@ -260,16 +273,74 @@
   right: 0;
   z-index: 0;
 }
+@media (min-width: 840px) {
+  .swag:after {
+    display: none;
+  }
+}
+
+.swagImg {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+@media (min-width: 840px) {
+  .swagImg {
+    max-width: 440px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 0;
+  }
+}
+
+@media (min-width: 1040px) {
+  .swagImg {
+    left: 40%;
+    max-width: 620px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 0;
+  }
+}
 
 .subscribe {
   align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0 1rem;
+  padding: 1rem;
   text-align: center;
+  width: 100%;
   z-index: 1;
 }
+
+@media (min-width: 840px) {
+  .subscribe {
+    align-items: flex-start;
+    padding: 3rem 4rem;
+    text-align: left;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1040px) {
+  .subscribe {
+    background-color: var(--warm-gray);
+    background-image: url('../public/images/bg-texture.png');
+  }
+}
+
+@media (min-width: 840px) {
+  .subscribe h2 {
+    text-align: left;
+  }
+}
+
 
 .why {
   background-color: var(--warm-gray);

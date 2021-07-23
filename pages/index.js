@@ -77,15 +77,15 @@ export default function Home() {
         <div className={styles.subscribe}>
           <h2>When to <br /><span className="gold">snag your swag</span></h2>
           <p>Sign up to find out when the swag is available for order.</p>
-          <div className={styles.form}>
-            <input type="text"/>
-            <button>subscribe</button>
-          </div>
+          <Form />
+        </div>
+        <div className={styles.swagImg}>
           <Image
             src={shirt}
             alt="kaffeine minds t-shirt"
           />
         </div>
+        
       </div>
 
       <div className={styles.why}>
