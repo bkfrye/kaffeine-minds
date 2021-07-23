@@ -78,6 +78,12 @@ input {
   border: 0;
 }
 
+input:focus {
+  border: 2px solid var(--gold);
+  border-radius: 0;
+  outline: none;
+}
+
 button {
   appearance: none;
   border: 0;
