@@ -7,7 +7,6 @@ import TitleSVG from '@images/coffee-for-coders.svg';
 import shirt from '@images/shirt.png';
 import styles from '../styles/Home.module.css';
 import { useAppContext } from '@context/AppContext';
-import { useEffect } from 'react';
 
 export default function Home() {
   const { viewportWidth } = useAppContext();
