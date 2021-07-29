@@ -12,8 +12,8 @@ function App({ Component, pageProps }) {
     <AppWrapper>
       <Head>
         <title>Kaffeine Minds</title>
-        <meta name="description" content="Kaffeine Minds is coffee for developers" />
-        <meta property="og:title" content="Kaffeine Minds - coffee for developers" />
+        <meta name="description" content="Kaffeine Minds is good from the ground up" />
+        <meta property="og:title" content="Kaffeine Minds" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={metaImg} />
       </Head>
