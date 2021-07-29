@@ -5,6 +5,10 @@ module.exports = {
   env: {
     BASE_URL: process.env.BASE_URL,
   },
+  images: {
+    loader: "imgix",
+    path: "",
+  },
   reactStrictMode: true,
   trailingSlash: true,
   webpack(config) {
