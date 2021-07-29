@@ -19,6 +19,7 @@ function App({ Component, pageProps }) {
         <meta property="og:title" content="Kaffeine Minds" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${_basePath}images/kaffeine-minds.jpg`} />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <Masthead />
       <main>
