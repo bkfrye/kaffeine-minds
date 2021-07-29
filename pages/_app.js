@@ -11,7 +11,6 @@ function App({ Component, pageProps }) {
   var _basePath;
   if (typeof window !== "undefined") {
     _basePath = window.location.href;
-    console.log(_basePath)
   }
 
   return (
