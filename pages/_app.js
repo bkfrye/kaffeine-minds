@@ -4,18 +4,24 @@ import { AppWrapper } from '@context/AppContext';
 import Footer from '@components/Footer.js';
 import Head from 'next/head';
 import Masthead from '@components/Masthead.js';
-
-import metaImg from '@images/kaffeine-minds.jpg';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 function App({ Component, pageProps }) {
+  var _basePath;
+  if (typeof window !== "undefined") {
+    _basePath = window.location.href;
+    console.log(_basePath)
+  }
+
   return (
     <AppWrapper>
       <Head>
         <title>Kaffeine Minds</title>
-        <meta name="description" content="Kaffeine Minds is good from the ground up" />
+        <meta name="description" content="Kaffeine Minds is coffee developed for developers by developers" />
         <meta property="og:title" content="Kaffeine Minds" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={metaImg} />
+        <meta property="og:image" content={`${_basePath}images/kaffeine-minds.jpg`} />
       </Head>
       <Masthead />
       <main>
