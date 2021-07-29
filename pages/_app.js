@@ -4,8 +4,6 @@ import { AppWrapper } from '@context/AppContext';
 import Footer from '@components/Footer.js';
 import Head from 'next/head';
 import Masthead from '@components/Masthead.js';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 function App({ Component, pageProps }) {
   var _basePath;
