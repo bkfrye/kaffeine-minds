@@ -4,13 +4,11 @@ import { AppWrapper } from '@context/AppContext';
 import Footer from '@components/Footer.js';
 import Head from 'next/head';
 import Masthead from '@components/Masthead.js';
+import { useEffect } from 'react';
+
+const _baseUrl = process.env.BASE_URL;
 
 function App({ Component, pageProps }) {
-  var _basePath;
-  if (typeof window !== "undefined") {
-    _basePath = window.location.href;
-  }
-
   return (
     <AppWrapper>
       <Head>
@@ -18,7 +16,7 @@ function App({ Component, pageProps }) {
         <meta name="description" content="Kaffeine Minds is coffee developed for developers by developers" />
         <meta property="og:title" content="Kaffeine Minds" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={`${_basePath}images/kaffeine-minds.jpg`} />
+        <meta property="og:image" content={`${_baseUrl}images/kaffeine-minds.jpg`} />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <Masthead />
